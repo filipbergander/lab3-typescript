@@ -1,0 +1,22 @@
+header {
+    nav {
+        background-color: lightblue;
+        padding: 1em;
+        text-align: center;
+    }
+    li {
+        display: inline-block;
+        margin-right: 20px;
+        height: 100%;
+    }
+    a {
+        text-decoration: none;
+        padding: 0.8em;
+        background-color: greenyellow;
+        color: rgb(0, 0, 0);
+    }
+}
+
+a:hover {
+    opacity: 0.8;
+}

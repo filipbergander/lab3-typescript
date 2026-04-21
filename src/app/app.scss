@@ -1,0 +1,17 @@
+footer {
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    min-height: 100%;
+    flex: 1;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 20px;
+}
