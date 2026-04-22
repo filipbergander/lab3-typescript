@@ -7,7 +7,7 @@ import { NotFound } from './pages/not-found/not-found';
 export const routes: Routes = [
     { path: 'hem', component: Home },
     { path: 'om', component: About },
-    { path: 'konvertering', component: Convert },
+    { path: 'konvertera', component: Convert },
     {path: '', redirectTo: 'hem', pathMatch: 'full'},
     {path: '404', component: NotFound},
     {path: '**', redirectTo: '404', pathMatch: 'full'}    
