@@ -1,10 +1,16 @@
 import { Component } from '@angular/core';
-import { Convert } from "../convert/convert";
 
 @Component({
   selector: 'app-home',
-  imports: [Convert],
+  imports: [],
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })
-export class Home {}
+export class Home {
+
+  welcomeMsg: string = 'Välkommen till webbplatsen! På sidan "Konvertera" kan du konvertera mellan olika enheter och mått samt temperaturer. Sidan "Om" beskriver uppgiften. Roligt att du hittat hit!';
+
+  welcomeMessage(): void {
+    alert(this.welcomeMsg);
+  }
+}

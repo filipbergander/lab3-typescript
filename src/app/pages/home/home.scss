@@ -12,6 +12,22 @@ h2 {
     text-align: center;
 }
 
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 0.75em 1em;
+    background-color: rgba(235, 238, 39, 0.849);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 1px rgba(72, 233, 32, 0.849);
+    font-size: 1em;
+    cursor: pointer;
+    transition: .3s ease;
+    &:hover {
+        background-color: salmon;
+    }
+}
+
 @media screen and (max-width: 768px) {
     img {
         width: 80%;
