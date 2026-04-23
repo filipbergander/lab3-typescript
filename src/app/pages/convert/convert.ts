@@ -14,12 +14,16 @@ export class Convert {
   numbCelsius: number = 0;
   lengthFeet: number = 0;
   lengthMeter: number = 0;
+  weightKilo: number = 0;
+  weightPound: number = 0;
 
   // Resultat-värden
   resultFahrenheit: number = 0;
   resultCelsius: number = 0;
   resultMeter: number = 0;
   resultFeet: number = 0;
+  resultKilo: number = 0;
+  resultPound: number = 0;
 
 
   // Logik & metoder
@@ -77,5 +81,31 @@ export class Convert {
     const valueFeet = Meter * 3.28084; // Omvandlaren med logik
     this.resultFeet = Number(valueFeet.toFixed(1));
     return this.resultFeet;
+  }
+
+  convPoundToKilo(): number {
+    const Pound = Number(this.weightPound);
+
+    if (isNaN(Pound)) {
+      this.resultKilo = 0;
+      return 0;
+    }
+
+    const valueKilo = Pound * 0.4536;
+    this.resultKilo = Number(valueKilo.toFixed(2));
+    return this.resultKilo;
+  }
+
+    convKiloToPound(): number {
+    const Kilo = Number(this.weightKilo);
+
+    if (isNaN(Kilo)) {
+      this.resultPound = 0;
+      return 0;
+    }
+
+    const valuePound = Kilo * 2.2046;
+    this.resultPound = Number(valuePound.toFixed(2));
+    return this.resultPound;
   }
 }

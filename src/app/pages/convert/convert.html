@@ -1,29 +1,44 @@
-<h1>Konvertera temperaturer & längder</h1>
+<h1>Konvertera temperaturer, längder & vikter</h1>
+<div class="containerConvert">
+    <section class="sectionTemp">
+        <h2>Temperaturer</h2>
+        <div class="inputTemp">
+            <label for="CelsiusToFahrenheit">Celsius -> Fahrenheit:</label>
+            <input maxlength="4" minLength="1" type="text" (input)="convCelsiusToFahrenheit()" id="CelsiusToFahrenheit" [(ngModel)]="numbCelsius">
+            <p>Temperatur: {{resultFahrenheit }} °Fahrenheit</p>
+        </div>
+        <div class="inputTemp">
+            <label for="FahrenheitToCelsius">Fahrenheit -> Celsius:</label>
+            <input maxlength="4" minLength="1" type="text" (input)="convFahrenheitToCelsius()" id="FahrenheitToCelsius" [(ngModel)]="numbFahrenheit">
+            <p>Temperatur: {{resultCelsius }} °Celsius</p>
+        </div>
+    </section>
 
-<section class="sectionTemp">
-    <h2>Temperaturer</h2>
-    <div class="inputTemp">
-        <label for="CelsiusToFahrenheit">Celsius -> Fahrenheit:</label>
-        <input maxlength="4" minLength="1" type="text" (input)="convCelsiusToFahrenheit()" id="CelsiusToFahrenheit" [(ngModel)]="numbCelsius">
-        <p>Temperatur: {{resultFahrenheit }} °Fahrenheit</p>
-    </div>
-    <div class="inputTemp">
-        <label for="FahrenheitToCelsius">Fahrenheit -> Celsius:</label>
-        <input maxlength="4" minLength="1" type="text" (input)="convFahrenheitToCelsius()" id="FahrenheitToCelsius" [(ngModel)]="numbFahrenheit">
-        <p>Temperatur: {{resultCelsius }} °Celsius</p>
-    </div>
-</section>
+    <section class="sectionLength">
+        <h2>Längder</h2>
+        <div class="inputLength">
+            <label for="feet">Feet till Meter:</label>
+            <input maxlength="10" minLength="1" type="text" (input)="convFeetToMeter()" id="feet" [(ngModel)]="lengthFeet">
+            <p>Längd: {{resultMeter }} Meter</p>
+        </div>
+        <div class="inputLength">
+            <label for="meter">Meter till Feet:</label>
+            <input maxlength="10" minLength="1" type="text" (input)="convMeterToFeet()" id="meter" [(ngModel)]="lengthMeter">
+            <p>Längd: {{resultFeet }} Feet</p>
+        </div>
+    </section>
 
-<section class="sectionLength">
-    <h2>Längder</h2>
-    <div class="inputLength">
-        <label for="feet">Feet till Meter:</label>
-        <input maxlength="10" minLength="1" type="text" (input)="convFeetToMeter()" id="feet" placeholder="Tal i feet" [(ngModel)]="lengthFeet">
-        <p>Längd: {{resultMeter }} Meter</p>
-    </div>
-    <div class="inputLength">
-        <label for="meter">Meter till Feet:</label>
-        <input maxlength="10" minLength="1" type="text" (input)="convMeterToFeet()" id="meter" placeholder="Tal i meter" [(ngModel)]="lengthMeter">
-        <p>Längd: {{resultFeet }} Feet</p>
-    </div>
-</section>
+    <section class="sectionWeight">
+        <h2>Vikter</h2>
+        <div class="inputWeight">
+            <label for="pounds">Pounds till Kilogram:</label>
+            <input maxlength="10" minLength="1" type="text" (input)="convPoundToKilo()" id="feet" [(ngModel)]="weightPound">
+            <p>Vikt: {{resultKilo }} Kilogram</p>
+        </div>
+        <div class="inputWeight">
+            <label for="kilo">Kilogram till Pounds:</label>
+            <input maxlength="10" minLength="1" type="text" (input)="convKiloToPound()" id="kilo" [(ngModel)]="weightKilo">
+            <p>Vikt: {{resultPound }} Pounds</p>
+        </div>
+    </section>
+</div>

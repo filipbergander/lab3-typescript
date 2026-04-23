@@ -10,8 +10,26 @@ body {
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(to left, rgba(53, 231, 107, 0.548), rgba(247, 208, 34, 0.589));
 }
 
 h1 {
     text-align: center;
 }
+
+#header-menu a.current {
+    background-color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 430px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 320px) {}
