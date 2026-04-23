@@ -1,5 +1,9 @@
 # Laboration 3 - Typescript
 
+Webbplats: https://fb-lab3-ts.netlify.app/
+
+### Nedan är en engelskt automatiskt genererad Readme från Angular ###
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.7.
 
 ## Development server
