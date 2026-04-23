@@ -20,11 +20,24 @@ article {
     }
 }
 
-@media screen and (max-width: 768px) {}
+#carbon-pic {
+    margin-top: 10px;
+    box-shadow: 0 0 4px 1px black;
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    article {
+        width: 90%;
+    }
+}
 
 @media screen and (max-width: 430px) {
     article {
-        width: 90%;
+        width: 95%;
+        padding: 0.5em;
         p {
             font-size: 0.9em;
         }

@@ -21,6 +21,13 @@ h1 {
     background-color: rgb(255, 255, 255);
 }
 
+figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.9em;
+    color: rgb(75, 74, 74);
+}
+
 @media screen and (max-width: 768px) {}
 
 @media screen and (max-width: 430px) {

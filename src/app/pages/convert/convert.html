@@ -31,14 +31,14 @@
     <section class="sectionWeight">
         <h2>Vikter</h2>
         <div class="inputWeight">
-            <label for="pounds">Pounds till Kilogram:</label>
+            <label for="pound">Pound till Kilogram:</label>
             <input maxlength="10" minLength="1" type="text" (input)="convPoundToKilo()" id="feet" [(ngModel)]="weightPound">
             <p>Vikt: {{resultKilo }} Kilogram</p>
         </div>
         <div class="inputWeight">
-            <label for="kilo">Kilogram till Pounds:</label>
+            <label for="kilo">Kilogram till Pound:</label>
             <input maxlength="10" minLength="1" type="text" (input)="convKiloToPound()" id="kilo" [(ngModel)]="weightKilo">
-            <p>Vikt: {{resultPound }} Pounds</p>
+            <p>Vikt: {{resultPound }} Pound</p>
         </div>
     </section>
 </div>

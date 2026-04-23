@@ -1,105 +1,95 @@
-   .containerConvert {
-       display: flex;
-       flex-direction: row;
-       align-items: center;
-       justify-content: center;
-       gap: 0;
-   }
-   
-   .sectionTemp {
-       background-color: rgba(84, 214, 253, 0.5);
-       padding: 0.5em;
-       margin: 0 auto;
-       margin-bottom: 1em;
-       border-radius: 25%;
-       width: 40%;
-       min-width: 300px;
-       h2 {
-           text-decoration: underline;
-       }
-   }
-   
-   .sectionLength {
-       @extend .sectionTemp;
-       h2 {
-           text-decoration: underline;
-       }
-   }
-   
-   .sectionWeight {
-       @extend .sectionTemp;
-   }
-   
-   .inputTemp {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       justify-content: center;
-       margin: 0 auto;
-       margin-bottom: 2em;
-       padding: 1em;
-       background-color: rgba(247, 231, 7, 0.801);
-       border-radius: 18px;
-       box-shadow: 0 0 10px 1px rgba(247, 231, 7, 0.801);
-       width: 50%;
-       input[type="text"] {
-           padding: 0.5em;
-           border-radius: 6px;
-       }
-       label {
-           font-size: 1em;
-       }
-       p {
-           font-size: 0.9em;
-           font-weight: bold;
-       }
-   }
-   
-   .inputLength {
-       @extend .inputTemp;
-       background-color: rgba(72, 233, 32, 0.849);
-       box-shadow: 0 0 10px 1px rgba(72, 233, 32, 0.849);
-   }
-   
-   .inputWeight {
-       @extend .inputTemp;
-       background-color: rgb(255, 72, 0);
-       box-shadow: 0 0 10px 1px rgba(255, 72, 0);
-   }
-   
-   @media screen and (max-width: 768px) {
-       .sectionTemp {
-           border-radius: 12px;
-           width: 80%;
-           min-width: 0;
-       }
-       .inputTemp {
-           width: 80%;
-       }
-   }
-   
-   @media screen and (max-width: 430px) {
-       .sectionLength,
-       .sectionTemp {
-           width: 95%;
-       }
-       .inputTemp {
-           width: 90%;
-           padding: 0.5em;
-           input[type="text"] {
-               padding: 0.3em;
-               border-radius: 6px;
-           }
-           label {
-               font-size: 1em;
-           }
-       }
-   }
-   
-   @media screen and (max-width: 320px) {
-       .inputTemp {
-           input[type="text"] {
-               width: 90%;
-           }
-       }
-   }
+  .containerConvert {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+  }
+  
+  .sectionTemp {
+      flex: 1 1 300px;
+      background-color: rgba(84, 214, 253, 0.5);
+      padding: 0.5em;
+      margin: 0 auto;
+      margin-bottom: 1em;
+      border-radius: 16px;
+      width: 100%;
+      max-width: 500px;
+      box-shadow: 0 0 2px 1px black;
+      h2 {
+          text-decoration: underline;
+      }
+  }
+  
+  .sectionLength {
+      @extend .sectionTemp;
+  }
+  
+  .sectionWeight {
+      @extend .sectionTemp;
+      justify-content: center;
+  }
+  
+  .inputTemp {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      margin-bottom: 2em;
+      padding: 1em;
+      background-color: rgba(247, 231, 7, 0.801);
+      border-radius: 18px;
+      box-shadow: 0 0 10px 1px rgba(247, 231, 7, 0.801);
+      width: 80%;
+      input[type="text"] {
+          padding: 0.5em;
+          border-radius: 6px;
+      }
+      label {
+          font-size: 1em;
+      }
+      p {
+          font-size: 0.9em;
+          font-weight: bold;
+      }
+  }
+  
+  .inputLength {
+      @extend .inputTemp;
+      background-color: rgba(72, 233, 32, 0.849);
+      box-shadow: 0 0 10px 1px rgba(72, 233, 32, 0.849);
+  }
+  
+  .inputWeight {
+      @extend .inputTemp;
+      background-color: rgb(255, 72, 0);
+      box-shadow: 0 0 10px 1px rgba(255, 72, 0);
+  }
+  
+  @media screen and (max-width: 768px) {}
+  
+  @media screen and (max-width: 430px) {
+      .sectionLength,
+      .sectionTemp {
+          width: 95%;
+      }
+      .inputTemp {
+          width: 90%;
+          padding: 0.5em;
+          input[type="text"] {
+              padding: 0.3em;
+              border-radius: 6px;
+          }
+          label {
+              font-size: 1em;
+          }
+      }
+  }
+  
+  @media screen and (max-width: 320px) {
+      .inputTemp {
+          input[type="text"] {
+              width: 90%;
+          }
+      }
+  }
