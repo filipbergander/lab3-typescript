@@ -13,7 +13,7 @@ En huvudmeny skapades som en egen komponent med namnet mainheader. Den placerade
 Samtliga sidor har en footer som är skapad och infogad som en egen komponent. TypeScript-logotypen infogades exempelvis i innehållet inom footern.
 En 404-sida skapades om någon av sidorna inte kunde hittas eller om besökaren navigerat fel bland webbplatsens adresser.
 
-Jag valde preprocessorn SCSS för att designa innehållet på sidorna genom struktur, layout och färger. Flex-layout användes till exempel på konverteringsmodellen, tillsammans med färgerna grönt, gul och orange/rött.
+Jag valde preprocessorn SCSS för att designa innehållet på sidorna genom struktur, layout och färger. Flex-layout användes till exempel på konverteringsmodellen, tillsammans med färgerna grönt, gul och orange/rött. Global styling för hela webbplatsen gjordes inom styles.scss medan detaljer för respektive sida sköttes inom komponentens egna scss-fil.
 
 ## Slutsatser Angular
 Webbplatsen upplevs responsiv och snabb. Jag gillar verkligen hur snabb sidorna är att navigera mellan efter att hemsidan är publicerad. Sidinnehållet ändras hastigt och man slipper behöva ladda om sidorna vid navigering. Syftet med detta är att efterlikna en Single-page Application, att hemsidan har en sida där innehållet ändras dynamiskt efter användarens interaktioner. Vilket jag ser som en stor fördel med detta ramverk.  
