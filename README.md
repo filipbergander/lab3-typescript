@@ -1,19 +1,19 @@
 # Laboration 3 - Typescript
-I den här laborationen skapar jag en webbplats som är gjord med ramverket Angular inom TypeScript. Webbplatsen har tre sidor och finns inom mappen src -> app -> pages.
+I den här laborationen skapar jag en webbplats som är gjord med ramverket Angular inom TypeScript. Webbplatsen har tre sidor och de finns inom mappen src -> app -> pages.
 
 **Webbplats:** https://fb-lab3-ts.netlify.app/
 
 * **Hem** (Startsidan) - Sidan använder en egen fotograferad bild från Afrika där en Angular-logotyp infogades i mitten. Ett välkomstmeddelande skapades genom Angulars "Event Binding" vid klick på knappen till meddelandet.
   
-* **Konvertera** - Tre konverteringsmetoder togs fram för att omvandla temperaturer, vikter och längder. Alla omvandlingar skrevs inom convert.ts och gjordes till en egen klass med properties och logik. Angulars NgModel användes för tvåvägs-binding och jag valde att inte ha någon knapp för att konvertera värden utan det uppdateras automatiskt.
+* **Konvertera** - Tre konverteringsmetoder togs fram för att omvandla temperaturer, vikter och längder. Alla omvandlingar skrevs inom convert.ts och gjordes till en egen klass med properties och logik. Angulars NgModel användes för tvåvägs-binding och jag valde att inte ha någon knapp för att konvertera värden utan det skulle uppdateras automatiskt.
   
 * **Om** - En beskrivning av uppgiften och hur jag gått tillväga när jag skapade webbplatsen.
 
-En huvudmeny skapades som en egen komponent. och fick namnet, mainheader. Den infogades bland mappen partials.
-Samtliga sidor har en footer som är skapad och infogad som en egen komponent. Jag valde att ta med TypeScript loggan inom footern.
-En 404-sida togs fram om besökaren skulle navigera fel och råka skriva in fel URL-adress till en av undersidorna, eller om någon av sidorna inte kunde hittas.
+En huvudmeny skapades som en egen komponent med namnet mainheader. Den placerades i mappen partials. Navigeringen bland sidor hanteras av Angulars routerLink. 
+Samtliga sidor har en footer som är skapad och infogad som en egen komponent. TypeScript-logotypen infogades exempelvis i innehållet inom footern.
+En 404-sida skapades om någon av sidorna inte kunde hittas eller om besökaren navigerat fel bland webbplatsens adresser.
 
-Jag valde preprocessorn SCSS för att designa innehållet på sidorna genom struktur, layout och färger. Exempelvis användes en flex-layout på konverteringsmodellen tillsammans med färgerna grönt, gul och orange/rött.
+Jag valde preprocessorn SCSS för att designa innehållet på sidorna genom struktur, layout och färger. Flex-layout användes till exempel på konverteringsmodellen, tillsammans med färgerna grönt, gul och orange/rött.
 
 ## Slutsatser Angular
 Webbplatsen upplevs responsiv och snabb. Jag gillar verkligen hur snabb sidorna är att navigera mellan efter att hemsidan är publicerad. Sidinnehållet ändras hastigt och man slipper behöva ladda om sidorna vid navigering. Syftet med detta är att efterlikna en Single-page Application, att hemsidan har en sida där innehållet ändras dynamiskt efter användarens interaktioner. Vilket jag ser som en stor fördel med detta ramverk.  
